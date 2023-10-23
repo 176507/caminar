@@ -1,0 +1,246 @@
+/* Start Global Rules */
+:root {
+    --maincolor:#FFFFFF;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background-image: url(../images/bg.jpg);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/*start Header*/
+.header .container .text {
+    text-align :center ;
+    margin-top: 50px;
+
+}
+.header .container .text a h2{
+    font-size :50px;
+    color :#FFFFFF;
+}
+.header .container .text a h6 {
+    color :#FFFFFFA6;
+}
+.header .container .image img {
+    margin-top: 50px;
+    margin-left :-20px;
+
+}
+/*End Header*/
+/*start content*/
+.content .container {
+    background-color: white;
+    padding: 10px;
+}
+.content .container h2 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    position :relative ;
+   color :#F4F4F4;
+}
+.content .container h2::after{
+        content: "";
+    position: absolute;
+    border-bottom: 2px solid #eee;
+    width: 150px;
+    bottom: -20px;
+    left: 510px;
+    
+} 
+
+.content .container h4 {
+    color: #BBBBBB;
+    FONT-SIZE: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.content .container .phragraph{
+    background-color :#f4f4f4;
+    padding :20px;
+    
+    
+}
+.content .container .phragraph p{
+    color :gray ;
+    line-height :1.8;
+}
+/*End content*/
+/*start Gallary*/
+.gallary .container {
+    background-color: #1e1f23;
+    margin-top: -40px;
+}
+.gallary .container .text {
+    background-color: black;
+    position :relative ;
+    bottom :-50px;
+    padding :10px;
+}
+.gallary .container .text h1 {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px;
+    position :relative ;
+
+}
+.gallary .container .text h1::after{
+    content :"";
+        content: "";
+    position: absolute;
+    border: 1px solid #666;
+    width: 90px;
+    left: 520px;
+    bottom: 0px;
+    }
+.gallary .container .text h4{
+    text-align :center ;
+    color :#ffffff40;
+    margin-bottom :50px;
+}
+    .gallary .container .section1,
+    .gallary .container .section2{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    }
+    .gallary .container .section2{
+        margin-top :50px;
+    }
+    .gallary .container .section1 img,
+    .gallary .container .section2 img{
+        width :580px;
+        height :300px;
+    }
+    .gallary .container .section2 .text1,
+    .gallary .container .section2 .text3{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    display :flex ;
+    justify-content :center ;
+    align-items :center ;
+    flex-wrap :wrap ;
+    
+    }
+   .gallary .container .section2 .text1 h2,
+   .gallary .container .section2 .text3 h2{
+       position :relative ;
+       left :-120px;
+    
+    }
+   .gallary .container .section2 .text1 p ,
+   .gallary .container .section2 .text3 p{
+
+    color :#00000080;
+    position :relative ;
+    top:-60px;
+
+      }
+   .gallary .container .section2 .text2{
+       padding :20px;
+        display :flex ;
+        justify-content :center ;
+        align-items :center ;
+         flex-wrap :wrap ;
+   }
+   .gallary .container .section2 .text2 h2{
+       color :white;
+       position :relative ;
+       right :-120px;
+   }
+    .gallary .container .section2 .text2 p {
+        position: relative;
+        top: -40px;
+        color:#FFFFFF40;
+    }
+
+/*End Gallary*/
+/*start Fotter*/
+.footer .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+.footer .container .images{
+  margin-bottom :20px;
+  
+
+}
+.footer .container .images a i{
+  margin-left:20px;
+  color :#ffffffbf;
+  position :relative ;
+  
+}
+.footer .container .images a{
+transition: .3s;
+}
+.footer .container .images a:hover i{
+    color :white;
+
+}
+.footer .container .text h5{
+    color :#ffffffbf;
+    font-size :11px;
+}
+.footer .container .text h5 a{
+    color :#FFFFFF;
+    font-size :15px;
+}
+/*End Fotter*/
